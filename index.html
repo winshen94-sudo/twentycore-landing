@@ -58,7 +58,7 @@
     .st{font-size:clamp(26px,3.5vw,40px);font-weight:800;letter-spacing:-1.5px;line-height:1.15;margin-bottom:14px}
     .sd{font-size:17px;color:var(--g500);max-width:540px;line-height:1.7}
     .bg-alt{background:var(--g50)}
-    .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:44px}
+    .pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:44px}
     .pc{padding:28px;background:var(--white);border:1px solid var(--g200);border-radius:var(--radlg);transition:all .3s}
     .pc:hover{border-color:var(--b500);transform:translateY(-4px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
     .pi{width:44px;height:44px;border-radius:var(--rad);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px}
@@ -151,8 +151,8 @@
     @keyframes fadeInDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
     .fi{opacity:0;transform:translateY(20px);transition:all .6s ease-out}
     .fi.v{opacity:1;transform:translateY(0)}
-    @media(max-width:900px){.nav-links{display:none!important}#menu-toggle{display:block!important}.hero-stats{gap:24px;flex-wrap:wrap}.fg,.pg{grid-template-columns:repeat(2,1fr)}.ef{flex-direction:column}.es{width:100%}.ft-inner{flex-direction:column;text-align:center}}
-    @media(max-width:480px){.hero{padding:100px 16px 60px}section{padding:64px 16px}.pain-grid,.fg,.pg,.cg{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:20px}footer .ft-grid{grid-template-columns:1fr 1fr!important}}
+    @media(max-width:900px){.nav-links{display:none!important}#menu-toggle{display:block!important}.hero-stats{gap:24px;flex-wrap:wrap}.fg,.pg,.ai-grid{grid-template-columns:repeat(2,1fr)!important}.ef{flex-direction:column}.es{width:100%}.ft-inner{flex-direction:column;text-align:center}.hero h1{font-size:36px;letter-spacing:-1.5px}.hero-sub{font-size:16px}.hero-cta-row{flex-direction:column;gap:10px}.hero-cta-row .btn-p,.hero-cta-row .btn-s{width:100%;justify-content:center}.hero-guar-card{padding:14px 20px!important}.gbox{padding:32px 24px!important}.ai-m{max-width:95%!important}}
+    @media(max-width:480px){.hero{padding:100px 16px 60px}section{padding:64px 16px}.pain-grid,.fg,.pg,.cg,.ai-grid{grid-template-columns:1fr!important}.hero-stats{flex-direction:column;gap:16px}.hero-stats .hero-stat{display:flex;align-items:center;gap:12px}.hero-stats .hero-stat .hero-stat-value{font-size:24px}.hero-stats .hero-stat .hero-stat-label{margin-top:0}footer .ft-grid{grid-template-columns:1fr!important}.pamt{font-size:32px}.st{font-size:24px}.hero-guar-card{flex-direction:column!important;text-align:center!important;gap:10px!important}.hero-guar-card>div:first-child{margin:0 auto}}
   </style>
 
   <!-- Google Analytics 4 — Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
@@ -209,7 +209,7 @@
       <a href="#signup" class="btn-p">Get Early Access <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a href="#features" class="btn-s">See What's Inside</a>
     </div>
-    <div style="margin-top:28px;padding:16px 28px;background:var(--white);border:1px solid var(--gn100);border-radius:var(--radlg);display:inline-flex;align-items:center;gap:14px;box-shadow:0 1px 3px rgba(0,0,0,0.06);animation:fadeInUp .7s ease-out .3s both">
+    <div class="hero-guar-card" style="margin-top:28px;padding:16px 28px;background:var(--white);border:1px solid var(--gn100);border-radius:var(--radlg);display:inline-flex;align-items:center;gap:14px;box-shadow:0 1px 3px rgba(0,0,0,0.06);animation:fadeInUp .7s ease-out .3s both">
       <div style="width:48px;height:48px;background:var(--gn50);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0">🛡️</div>
       <div style="text-align:left">
         <div style="font-size:15px;font-weight:700;color:var(--g900)">60-Day Money-Back Guarantee</div>
@@ -228,7 +228,7 @@
     <div class="sl">The Problem</div>
     <h2 class="st fi">Malaysian Manufacturers Deserve Better</h2>
     <p class="sd fi">You're stuck between Excel chaos and ERPs that cost more than your forklift. There's a third option now.</p>
-    <div class="pain-grid" style="grid-template-columns:repeat(2,1fr)">
+    <div class="pain-grid">
       <div class="pc fi"><div class="pi r">💸</div><h3>SAP & Oracle Are Bleeding You Dry</h3><p>RM 5,000–50,000/month plus consultants, customisation fees, and endless licence renewals that drain your cash flow.</p><div class="sol"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> TwentyCore: From RM 349/mo. Live in weeks.</div></div>
       <div class="pc fi"><div class="pi a">📋</div><h3>Compliance Is a Full-Time Job</h3><p>EPF brackets, SOCSO tables, PCB calculations, LHDN e-Invoice — you're juggling spreadsheets and hoping LHDN doesn't come knocking.</p><div class="sol"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> All Malaysian statutory built-in. Auto-calculated.</div></div>
       <div class="pc fi"><div class="pi r">🏗️</div><h3>Implementation Costs RM 100K+ Before You Even Start</h3><p>SAP and Oracle charge RM 100,000–200,000 just for implementation — before a single invoice is generated. Consultants, customisation, data migration, training. Most SMEs can't justify the risk.</p><div class="sol"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> TwentyCore: Free onboarding. Go live in 14 days.</div></div>
@@ -258,7 +258,7 @@
     <h2 class="st fi">9 AI Systems. Smarter Decisions. Less Guesswork.</h2>
     <p class="sd fi" style="max-width:620px">TwentyCore doesn't just store your data — it thinks with it. 9 purpose-built AI systems work across every department to surface insights, predict problems, and automate decisions that used to take hours.</p>
 
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px">
+    <div class="ai-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px">
       <div class="fc fi" style="border-left:3px solid var(--b600)">
         <div style="font-size:13px;font-weight:700;color:var(--b600);margin-bottom:8px">01 — AI CFO</div>
         <h3>Cash Flow Forecasting & Collections</h3>
