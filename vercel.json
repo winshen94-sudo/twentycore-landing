@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.twentycore.ai/early-access",
+      "permanent": true
+    }
+  ]
+}
